@@ -1,0 +1,23 @@
+{
+  "name": "remixms-website",
+  "version": "1.0.0",
+  "description": "RemixMS Website and API",
+  "main": "api-server.js",
+  "scripts": {
+    "start": "node api-server.js",
+    "build": "echo 'Building...'",
+    "vercel-build": "echo 'Building for Vercel...'"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

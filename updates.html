@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates - RemixMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .updates-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .update-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .update-date {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .update-title {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-family: var(--bubbly-font);
+        }
+
+        .update-content {
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        .update-content ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .update-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-to-home {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .back-to-home a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/maplestory-logo.png" alt="RemixMS Logo">
+            </div>
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-button">Home</a>
+                <a href="#" class="nav-button" id="downloadBtn">Download</a>
+                <a href="#" class="nav-button register" id="registerBtn">Register</a>
+                <a href="updates.html" class="nav-button">Updates</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Latest Updates</h1>
+            <p>Stay informed about new features and improvements!</p>
+        </div>
+    </section>
+
+    <div class="updates-container">
+        <h1 class="update-title">Latest Updates</h1>
+        
+        <div class="update-card">
+            <div class="update-date">May 4, 2025</div>
+            <h2 class="update-title">Version 1.0.0 - Launch!</h2>
+            <div class="update-content">
+                <p>Welcome to RemixMS! We're excited to launch our server with the following features:</p>
+                <ul>
+                    <li>5x EXP Rate</li>
+                    <li>4x Meso Rate</li>
+                    <li>2x Drop Rate</li>
+                    <li>Auto Registration System</li>
+                    <li>Stable Gameplay</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="update-card">
+            <div class="update-date">Coming Soon</div>
+            <h2 class="update-title">Future Updates</h2>
+            <div class="update-content">
+                <p>We're working on exciting new features and content:</p>
+                <ul>
+                    <li>New Custom Bosses</li>
+                    <li>Special Events</li>
+                    <li>Quality of Life Improvements</li>
+                    <li>More Custom Content</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="back-to-home">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Download Modal -->
+    <div class="modal" id="downloadModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Download RemixMS</h2>
+            <div class="download-options">
+                <a href="https://mega.nz/file/zJEwSQLS#eboz4uAibHMO6nKTuOgGfKfZbyInkKZJqMHYdtMv8AE" class="download-option" target="_blank">
+                    <i class="fas fa-download"></i>
+                    <span>RemixMS Client</span>
+                </a>
+            </div>
+            <div class="installation-steps">
+                <h3>Installation Guide:</h3>
+                <ol>
+                    <li>Download the RemixMS Client</li>
+                    <li>Extract the files to your desired location</li>
+                    <li>Run the client and start playing!</li>
+                </ol>
+                <div class="disclaimer">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p><strong>Important:</strong> You must disable your firewall, antivirus, and real-time protection before playing. This is a common requirement for all MapleStory private servers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Auto Registration</h2>
+            <p>No need to register here! Just launch the game and enter your desired username and password in the login screen. The game will automatically create your account!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
