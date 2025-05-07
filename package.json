@@ -9,15 +9,26 @@
     "vercel-build": "echo 'Building for Vercel...'"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "mysql2": "^3.6.0",
-    "bcrypt": "^5.1.0",
-    "cors": "^2.8.5"
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
   "engines": {
     "node": "18.x"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ojhaox/remixms-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ojhaox/remixms-website/issues"
+  },
+  "homepage": "https://github.com/ojhaox/remixms-website#readme"
 }
